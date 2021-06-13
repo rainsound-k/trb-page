@@ -1,0 +1,494 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.pc {
+  display: block;
+}
+.mobile {
+  display: none;
+}
+.main-container {
+  margin: 0 auto;
+}
+
+.first-section {
+  max-width: 1152px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 67px 52.5px 0 52.5px;
+  flex-direction: row;
+}
+.first-section .title {
+  font-weight: 700;
+  line-height: 44.8px;
+  font-size: 32px;
+  text-align: left;
+  margin-bottom: 10px;
+  color: #7732ff;
+}
+.first-section .sub-title {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+
+.first-section .image-container {
+  z-index: -1;
+  background-image: url("https://trenbe.marketing/wp-content/uploads/2021/06/Ellipse-197.png");
+  background-position: 12px 33px;
+  background-repeat: no-repeat;
+  width: 479px;
+  height: 520px;
+}
+
+.second-section {
+  background-color: #7732ff;
+  margin-top: -86px;
+  width: 100%;
+  z-index: 2;
+}
+
+.second-section .title {
+  padding-top: 60px;
+  margin-bottom: 40px;
+  color: white;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 40.6px;
+  text-align: center;
+}
+.second-section .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 689px;
+  align-items: center;
+  margin: 0 auto;
+}
+.second-section .card-container .card-description {
+  width: 158px;
+  height: 160px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.second-section .card-description img {
+  margin-bottom: 16px;
+}
+.second-section .card-description .sub-title {
+  font-size: 14px;
+  line-height: 16.8px;
+  margin-bottom: 5px;
+}
+.second-section .card-description div:last-child {
+  font-size: 23px;
+  line-height: 27.6px;
+  font-weight: 700;
+}
+.second-section .standard-date {
+  margin: 15px 0 60px;
+  color: #cdb4ff;
+  font-size: 13px;
+  line-height: 15.6px;
+  width: 100%;
+  text-align: right;
+}
+
+.third-section .title {
+  padding-top: 60px;
+  margin-bottom: 60px;
+  color: black;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 40.6px;
+  text-align: center;
+}
+.third-section .card-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1152px;
+  justify-content: space-between;
+  margin: 0 auto 80px;
+}
+.third-section .card-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.third-section .image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.third-section .image-container img {
+  position: absolute;
+  top: -2px;
+  margin-left: 3px;
+}
+.third-section .image-container.third img {
+  position: absolute;
+  top: -2px;
+  margin-left: 12px;
+}
+.third-section .sub-title {
+  margin-top: 28px;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.third-section .description {
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #777777;
+}
+.third-section .description span {
+  color: #7732ff;
+  font-weight: 700;
+}
+.third-section .more-link {
+  text-decoration: none;
+  color: #1585ec;
+  font-size: 13px;
+  line-height: 15.6px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.third-section .more-link:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  width: 150px;
+  border-bottom: 1px solid #1585ec;
+}
+
+.fourth-section {
+  background-color: #f6f0ff;
+}
+.fourth-section .title {
+  padding-top: 60px;
+  margin-bottom: 15px;
+  color: black;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 40.6px;
+  text-align: center;
+}
+.fourth-section .card-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1085px;
+  overflow: scroll;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.fourth-section .card-container img {
+  margin-right: -30px;
+  width: 260px;
+}
+.fourth-section .card-container img:last-child {
+  margin-right: 0;
+}
+
+.fifth-section {
+  background-color: #ececec;
+  padding-bottom: 40px;
+}
+.fifth-section .title {
+  padding-top: 60px;
+  margin-bottom: 15px;
+  color: black;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 40.6px;
+  text-align: center;
+}
+.fifth-section .sub-title {
+  margin-bottom: 10px;
+  color: #777777;
+  font-size: 18px;
+  line-height: 25.2px;
+  text-align: center;
+}
+.fifth-section .card-container {
+  margin: 0 auto;
+  max-width: 996px;
+}
+.fifth-section .card-container img {
+  width: 360px !important;
+  margin-right: -30px;
+}
+.fifth-section .card-container img:last-child {
+  margin-right: 0;
+}
+.slick-prev,
+.slick-next {
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 19px !important;
+  color: white !important;
+  background-color: rgba(55, 55, 55, 0.3) !important;
+}
+.slick-prev {
+  left: -40px !important;
+}
+.slick-next {
+  right: -40px !important;
+}
+.slick-next:before {
+  content: ">" !important;
+  opacity: 1 !important;
+  font-weight: 600;
+}
+.slick-prev:before {
+  content: "<" !important;
+  opacity: 1 !important;
+  font-weight: 600;
+}
+
+.lavender-circle {
+  background-color: #e9ddff;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}
+
+.text-system-color {
+  color: #777777;
+}
+.background-primary-color {
+  background-color: #7732ff;
+}
+
+.primary-button {
+  display: inline-block;
+  border-radius: 100px;
+  background-color: #7732ff;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 14px 24px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1152px) {
+  .first-section {
+    max-width: calc(100% - 105px);
+  }
+  .third-section .card-container {
+    max-width: calc(100% - 40px);
+  }
+  .slick-prev {
+    left: 0 !important;
+    z-index: 2;
+  }
+  .slick-next {
+    right: 0 !important;
+    z-index: 2;
+  }
+}
+@media screen and (max-width: 768px) {
+  .first-section {
+    padding: 67px 0 0 52.5px;
+    max-width: calc(100% - 52.5px);
+  }
+  .third-section .card-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    margin: 0 auto 70px;
+  }
+  .third-section .card-description {
+    margin-bottom: 110px;
+  }
+  .fourth-section .card-container img {
+    margin-right: -20px;
+    width: 200px;
+  }
+  .fifth-section .card-container {
+    max-width: 100%;
+  }
+  .slick-dots {
+    bottom: 50px !important;
+  }
+  .slick-dotted.slick-slider {
+    margin-bottom: 0 !important;
+  }
+  .slick-dots li {
+    margin: 0 !important;
+  }
+  .slick-dots li.slick-active button:before {
+    color: #7732ff !important;
+    opacity: 1 !important;
+  }
+  .slick-dots li button:before {
+    color: #d8c8f0 !important;
+    opacity: 1 !important;
+  }
+  .slick-prev {
+    left: 20px !important;
+    z-index: 2;
+  }
+  .slick-next {
+    right: 20px !important;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pc {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .main-container {
+    max-width: 100%;
+  }
+
+  .first-section {
+    max-width: 100%;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .first-section .text-container {
+    margin-bottom: 68px;
+    text-align: center;
+  }
+  .first-section .image-container {
+    background-image: url("https://trenbe.marketing/wp-content/uploads/2021/06/Ellipse-196.png");
+    background-position: 10px 29px;
+    width: 416px;
+    max-width: calc(100% - 18px);
+    margin-left: 18px;
+    height: 452px;
+  }
+  .first-section .image-container .forward-image {
+    width: 292px;
+  }
+  .first-section .title {
+    line-height: 39.2px;
+    font-size: 28px;
+    text-align: center;
+  }
+  .first-section .title > span {
+    color: black;
+  }
+  .first-section .sub-title {
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  .second-section {
+    margin-top: -83px;
+    width: 100%;
+    z-index: 2;
+  }
+  .second-section .title {
+    padding-top: 50px;
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .second-section .card-container {
+    width: calc(100% - 40px);
+    align-items: center;
+    padding: 0 20px;
+  }
+  .second-section .card-container .card-description {
+    margin-bottom: 19px;
+    max-width: calc((100% - 15px) / 2);
+    width: 100%;
+  }
+  .second-section .standard-date {
+    margin: -4px 0 50px;
+  }
+
+  .third-section .title {
+    padding-top: 50px;
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .third-section .card-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    margin: 0 auto 70px;
+  }
+  .third-section .card-description {
+    margin-bottom: 110px;
+  }
+  .third-section .card-description:last-child {
+    margin-bottom: 0;
+  }
+
+  .fourth-section .card-container {
+    display: block;
+    max-width: 1085px;
+    overflow: auto;
+    padding-bottom: 70px;
+  }
+
+  .fifth-section .title {
+    padding-top: 50px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .fifth-section .sub-title {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  .fifth-section .card-container {
+    max-width: 100%;
+  }
+  .slick-dots {
+    bottom: 50px !important;
+  }
+  .slick-dotted.slick-slider {
+    margin-bottom: 0 !important;
+  }
+  .slick-dots li {
+    margin: 0 !important;
+  }
+  .slick-dots li.slick-active button:before {
+    color: #7732ff !important;
+    opacity: 1 !important;
+  }
+  .slick-dots li button:before {
+    color: #d8c8f0 !important;
+    opacity: 1 !important;
+  }
+  .slick-prev {
+    left: 20px !important;
+    z-index: 2;
+  }
+  .slick-next {
+    right: 20px !important;
+    z-index: 2;
+  }
+}
