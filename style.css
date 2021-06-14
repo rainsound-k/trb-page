@@ -491,4 +491,41 @@ body {
     right: 20px !important;
     z-index: 2;
   }
+  .floating-container {
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 55px 0;
+    z-index: 3;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .floating-container:hover {
+    background-color: white;
+    color: #7732ff;
+    border: 1px solid #7732ff;
+  }
+  .floating-container:focus {
+    color: white;
+    background-color: #7732ff;
+    border: 1px solid #7732ff;
+  }
+  .floating-container:disabled {
+    color: white;
+    background-color: #cccccc;
+    border: 1px solid #cccccc;
+    cursor: default;
+  }
+  .floating-container img {
+    margin-left: 7px;
+  }
 }
