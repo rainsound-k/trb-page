@@ -294,6 +294,14 @@
       </button> -->
     </div>
 
+    <div class="chatservice-floating-btn">
+      <img class="pc" src="https://trenbe.marketing/wp-content/uploads/2021/06/PC-2.png" alt="" width="94">
+      <img class="mobile" src="https://trenbe.marketing/wp-content/uploads/2021/06/chatservice.png" alt="" width="36" height="36">
+    </div>
+    <div class="upward-floating-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+      <img src="https://trenbe.marketing/wp-content/uploads/2021/06/upward.png" alt="" width="36" height="36">
+    </div>
+
     <footer>
       <div class="left-side">
         <div class="pc">
@@ -411,6 +419,10 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
+      const isIOSSafari = /Mac|iPhone|iPad|iPod/.test(navigator.userAgent) && /AppleWebKit.*Safari\//i.test(navigator.userAgent) && navigator.userAgent.indexOf('Chrome') === -1
+      if (isIOSSafari) {
+        document.body.style.webkitTextStroke = '.5px'
+      }
       $('.fifth-section .card-container').slick({
         infinite: true,
         slidesToShow: 3,
@@ -445,6 +457,22 @@
           },
         ],
       });
+
+      let position = document.getElementsByClassName('second-section')[0].offsetTop - 386;
+      if (screen.width <= 480) {
+        position = document.getElementsByClassName('first-section')[0].offsetTop;
+      }
+
+      const toggleVisibility = () => {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        if (scrollTop > position) {
+          document.getElementsByClassName('upward-floating-btn')[0].style.display = "block";
+        } else {
+          document.getElementsByClassName('upward-floating-btn')[0].style.display = "none";
+        }
+      };
+
+      window.addEventListener('scroll', toggleVisibility);
     </script>
   </body>
 </html>
