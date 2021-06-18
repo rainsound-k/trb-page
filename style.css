@@ -64,7 +64,7 @@ body {
 .mobile {
   display: none;
 }
-.main-container {
+.main-container, footer {
   font-family: 'Galano Grotesque', 'Noto Sans KR', sans-serif;
   margin: 0 auto;
 }
@@ -617,6 +617,17 @@ footer .escrow {
   .third-section .card-description {
     margin-bottom: 110px;
   }
+  .fourth-section .card-container {
+    display: block;
+    max-width: 1085px;
+    overflow: auto;
+    padding-bottom: 70px;
+  }
+  .fourth-section .card-container img {
+    aspect-ratio: 260 / 295;
+    width: 75vw;
+    height: auto;
+  }
   .fifth-section .card-container {
     max-width: 100%;
   }
@@ -860,6 +871,11 @@ footer .escrow {
     overflow: auto;
     padding-bottom: 70px;
   }
+  .fourth-section .card-container img {
+    aspect-ratio: 260 / 295;
+    width: 75vw;
+    height: auto;
+  }
   .fourth-section .title {
     font-size: 25px;
     line-height: 35px;
@@ -948,7 +964,7 @@ footer .escrow {
   }
   .upward-floating-btn {
     right: 20px;
-    bottom: 158px;
+    bottom: 172px;
     cursor: pointer;
   }
 }
